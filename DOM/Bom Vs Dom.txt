@@ -1,0 +1,2 @@
+The Document Object Model (DOM) defines a standard for accessing documents. The Browser Object Model (BOM) allows JavaScript to "talk to" the browser. In the HTML DOM, the Element object represents an HTML element, like P, DIV, A, TABLE, or any other HTML element.
+DOM: Objects that have to do with the currently loaded page (the page is also called the document) BOM: Objects that deal with everything outside the page (the browser window and the desktop screen)

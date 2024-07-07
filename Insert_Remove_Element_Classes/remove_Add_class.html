@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Exercise</title>
+    <style>
+        .container {
+            margin: 34px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 34px 45px;
+        }
+
+        .box {
+            height: 45px;
+            width: 56px;
+            border: 2px solid black;
+
+
+        }
+
+        .red {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container red green-background">
+        <div class="box">This</div>
+        <div class="box">This</div>
+        <div class="box">This</div>
+        <div class="box">This</div>
+        <div class="box">This</div>
+        <div class="box">This</div>
+        <script>
+
+            //------------Remove nodes -----------
+            // document.querySelector(".container").remove()
+
+
+            //-----------Getting all classes of element 
+            document.querySelector(".container").classList
+            //output :  DOMTokenList(3) ['container', 'red', 'green-background', value: 'container red green-background']
+            document.querySelector(".container").className
+            // output: 'container red green-background'
+
+
+
+            //-------Adding Class to previous class
+            document.querySelector(".container").classList.add("warda")
+            //output:  undefined
+            document.querySelector(".container").classList
+            //output :  DOMTokenList(4)['container', 'red', 'green-background', 'warda', value: 'container red green-background warda']
+
+            //remove class from previous classes
+            // document.querySelector(".container").classList.remove("warda")
+
+
+            //--------Toggle: add the class if it dosenot exist other wise remove it 
+            //toggle method use for khula hy tw band kardo band hy tw khol do means ek cheez lagi hy tw hat jae gi or agar hati hy tw lag jae gi
+            document.querySelector(".caontainer").classList.toggle("red")
+
+            //------Contain : return true if present  or false if not 
+            document.querySelector(".container").classList.contains("red")
+            //output: true
+            document.querySelector(".container").classList.toggle("red")
+            //output: false
+            document.querySelector(".container").classList.contains("red")
+            //output: false
+
+
+
+
+
+
+
+        </script>
+    </div>
+
+
+</body>
+
+</html>

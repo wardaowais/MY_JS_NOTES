@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Exercise</title>
+    <style>
+        .container {
+            margin: 34px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 34px 45px;
+        }
+
+        .box {
+            height: 45px;
+            width: 56px;
+            border: 2px solid black;
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <div hidden  >I am hidden box </div> -->
+    <div class="ch " data-createdby="warda" data-conceptby="owais">This is box </div>
+    <div class="st" style="color:blue; display: inline;">This is style Attribute</div>
+    <div class="container">
+        <div class="box">This</div>
+        <div class="box">This</div>
+        <div class="box">This</div>
+        <div class="box">This</div>
+        <div class="box">This</div>
+        <div class="box">This</div>
+        <script>
+            //---------------Direct Adding Html without using nodes
+            //-----insertAdjacentHtml / Text / Element ---------------
+            //-----insertAdjacentHtml 
+          
+
+            // -----------before begin: insert html immediately before element 
+            let cont = document.querySelector(".container")
+            cont.insertAdjacentHTML("beforebegin","<b>I am beforebegin </b><br><br>")
+
+            // ------------afterbegin: insert html into the element at the begining 
+            //container k start hony k baad insert hoga
+            cont.insertAdjacentHTML("afterbegin","<b>I am  afterbegin </b><br><br>")
+
+            // ----using afterend : insert html immedietly after element 
+            //container k end hony par usi k end men insert hojae ga  
+            cont.insertAdjacentHTML("afterend","<b>I am afterend   </b>")
+
+            //before end : insert html into the element at the end
+            cont.insertAdjacentHTML("beforeend","<b>I am  beforeend </b>")
+
+            //-----insertAdjacentText 
+            cont.insertAdjacentText("beforebegin","This is text")
+
+            //-----insertAdjacentElement
+            let element = document.createElement("button")
+            element.innerHTML = "submit"
+            cont.insertAdjacentElement("beforebegin",element)
+          
+
+            
+    
+
+            
+
+        </script>
+    </div>
+    <!-- <script src="script.js"></script> -->
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    height: 167px;
+    display: flex;
+}
+
+.left{
+    display: inline;
+    display: inline;
+    align-self: center;
+    padding: 0px 31px 0px 33px;
+
+}
+.left img{
+    height: 136px;
+    border-radius: 15px;
+    
+}
+.right{
+    display: inline-block;
+    padding: 24px 0px;
+
+}
+.right p{
+    font-size: 23px;
+    font-weight: 100;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ul{
+    padding: 14px 0px;
+}
+ul li{
+    list-style: none;
+    display: inline;
+    padding: 0 14px 0px 0px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
